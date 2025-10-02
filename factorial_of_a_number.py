@@ -1,10 +1,8 @@
-print("Введите число из которого хотите получить факториал: ")
-num = int(input())
+number = int(input("Введите число из которого хотите вычислить факторал: "))
 
+result = 1
 
-factorial = 1
+for i in range(1, number + 1):
+    result *= i
 
-for i in range(1, num + 1):
-    factorial *= i
-
-print("Факториал числа", num, "равен:", factorial)
+print(f"Факториал числа", {number}, "равен:", {result})
